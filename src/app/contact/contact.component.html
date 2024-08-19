@@ -1,0 +1,26 @@
+
+<section class="cont   vh-100 d-flex justify-content-center flex-column  align-items-center ">
+
+
+<app-star [childData]="userName2" [colors]="usercolor"></app-star>
+
+<form action="" class="w-50 mx-auto">
+
+
+<label for="userName" class=" lab my-2  position-relative top-0" [class.top-50]="!userName.length"  >userName :</label>
+<input type="text" placeholder="userName" name="userName" [(ngModel)]="userName"     id="userName" class="form-control border-top-0 shadow-none  border-end-0 border-start-0  position-relative my-2">
+<!-- <.....> -->
+<label for="userAge" class=" lab my-2  position-relative top-0" [class.top-50]="!userAge"  >userAge :</label>
+<input type="text" placeholder="userAge" name="userAge" [(ngModel)]="userAge"     id="userAge" class="form-control border-top-0 shadow-none  border-end-0 border-start-0  position-relative my-2">
+<!-- <..> -->
+<label for="userEmail" class=" lab my-2  position-relative top-0" [class.top-50]="!userEmail.length"  >userEmail :</label>
+<input type="text" placeholder="userEmail" name="userEmail" [(ngModel)]="userEmail"     id="userEmail" class="form-control border-top-0 shadow-none  border-end-0 border-start-0  position-relative my-2">
+<!-- <..> -->
+<label for="userpassword" class=" lab my-2  position-relative top-0" [class.top-50]="!userpassword.length"  >userpassword :</label>
+<input type="text" placeholder="userpassword" name="userpassword" [(ngModel)]="userpassword"     id="userpassword" class="form-control border-top-0 shadow-none  border-end-0 border-start-0  position-relative my-2">
+
+<!-- <..> -->
+
+<button class=" btn2    mt-2">send Message</button>
+</form>
+</section>

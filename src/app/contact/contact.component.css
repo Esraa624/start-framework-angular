@@ -1,0 +1,14 @@
+.lab{
+    color:  #1abc9c;
+}
+.top-50{
+    top: 50px !important;
+}
+
+.btn2{
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+}

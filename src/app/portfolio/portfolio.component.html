@@ -1,0 +1,39 @@
+
+<section class="port d-flex justify-content-center flex-column  align-items-center py-5 " >
+
+    <app-star [childData]="userName" [colors]="usercolor"></app-star>
+
+
+    <div class="container">
+     
+      
+      <div class="row g-3">
+       
+@for(src of srcs ; track $index){
+  <div class="col-md-4">
+            
+    <div class="img  position-relative overflow-hidden">
+      <img [src]=" src" alt="" class="w-100 rounded-3">
+
+      <div  (click)="flag = false ;imgs=src" class="position-absolute top-0 justify-content-center align-items-center w-100 h-100 start-0 d-flex rounded-3 plus">
+        <i class="fa-solid fa-plus text-white fa-6x"></i>
+      </div>
+
+    </div>
+    
+  </div>
+}
+
+        
+      </div>
+    </div>
+  </section>
+
+  <div  [class.d-none]="flag"   class=" md  h-100 w-100  start-0 top-0 d-flex position-fixed justify-content-center align-items-center bg-primary bg-opacity-25"  (click)="hide($event.target,img)">
+<img #img [src]="imgs" width="650" class="rounded-3" alt="">
+
+
+
+  </div>
+
+  
